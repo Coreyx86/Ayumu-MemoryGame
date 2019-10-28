@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="Ayumu.Cell"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Ayumu"
+             mc:Ignorable="d" 
+             d:DesignHeight="100" d:DesignWidth="100" Background="Gray">
+    <Grid>
+
+        <Button x:Name="num" Width="100" Height="100" Content="{Binding valuestr, FallbackValue=0}" Background="Gray" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="75" FontWeight="SemiBold" Margin="0"/>
+        <!--<Border >
+            <TextBlock x:Name="num" MouseUp="Num_MouseUp" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="75" FontWeight="SemiBold" Margin="10" Text="{Binding value, FallbackValue=1}"/>
+        </Border>-->
+    </Grid>
+</UserControl>
